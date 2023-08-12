@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ITEMS CONTAINER  -->
+    <div class="item_container">
+      <div class="item" id="item1">
+        <p>SOCKS</p>
+        <p>Price <span>$20</span></p>
+        <button onclick="addToCart(1)">Add to Cart</button>
+      </div>
+      <div class="item" id="item2">
+        <p>JACKET</p>
+        <p onclick="sayHi()">Price <span>$15</span></p>
+        <button onclick="addToCart(2)">Add to Cart</button>
+      </div>
+      <div class="item" id="item3">
+        <p>SHORTS</p>
+        <p>Price <span>$30</span></p>
+        <button onclick="addToCart(3)">Add to Cart</button>
+      </div>
+    </div>
+    <!-- CART CONTAINER -->
+    <div class="items_cart">
+      <p id="itemsSelected"></p>
+    </div>
+    <div class="cart_area">
+      <div class="itemsCart" id="ItemsCart"></div>
+      <!-- TOTAL CONTAINER -->
+      <div class="totals">
+        <p id="total_amount"></p>
+      </div>
+    </div>
+    <!-- CLEAR BUTTON DIV -->
+    <div id="clear_section"></div>
+    <!---------------------------- TESTING ---------------------------->
+    <!-- <p id="animals"></p>
+    <button onclick="removePet()">remove animals</button> -->
+    <script src="script.js"></script>
+  </body>
+</html>
